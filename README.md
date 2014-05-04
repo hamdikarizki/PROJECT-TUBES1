@@ -3,6 +3,8 @@ PROJECT-TUBES1
 
 ###TUGAS LAYANAN WEB 
 ![](http://www.viterbi.net/wp-content/uploads/2013/01/Github.jpg)
+#MEDIA PARTNER
+![](http://i110.photobucket.com/albums/n84/hevi_fauzan/Persib/Sima%20maung/logo-simamaung.jpg)
 
 ##Anggota
 
