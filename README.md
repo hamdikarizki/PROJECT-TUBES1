@@ -6,7 +6,8 @@ Tugas Besar Layanan Web
 Anggota
 ==============
 <table>
-<td>Nama</td>          
+
+<center><td>Nama</td></center>       
 <td>NPM</td>
 <tr>
 <td>Andryan Sitata</td>      <td>117006105</td>
