@@ -120,7 +120,7 @@ $title = $item->title;
 $link = $item->link;
 $published_on = $item->pubDate;
 $description = $item->description;
-echo '<h3><a href="'.$link.'">'.$title.'</a></h3>';
+echo '<h2><a href="'.$link.'">'.$title.'</a></h2>';
 echo '<span>('.$published_on.')</span>';
 echo '<p>'.$description.'</p>';
 }
@@ -128,9 +128,9 @@ echo '<p>'.$description.'</p>';
 ?>
 </font></div>
 
-<div align=justify><font class="ws8" color="#808080" face="Tahoma"><BR></font></div>
-<div align=right><font class="ws8" color="#FF9900" face="Tahoma"><B><U>Read More</U></B></font><font class="ws8" color="#FF9900" face="Tahoma"><B>&nbsp; </B></font></div>
-<div><font class="ws8" color="#808080" face="Tahoma"><BR></font></div>
+<div align=justify><font class="ws8" color="#808080" face="Calibri"><BR></font></div>
+<div align=right><font class="ws8" color="#FF9900" face="Calibri"><B><U>Read More</U></B></font><font class="ws8" color="#FF9900" face="Calibri"><B>&nbsp; </B></font></div>
+<div><font class="ws8" color="#808080" face="Calibri"><BR></font></div>
 </div></div>
 
 <div id="image6" style="position:absolute; overflow:hidden; left:640px; top:471px; width:94px; height:35px; z-index:9"><a href="https://github.com/"><img src="images/blog-github.png" alt="" title="" border=0 width=94 height=35></a></div>
