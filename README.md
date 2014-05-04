@@ -5,26 +5,31 @@ Tugas Besar Layanan Web
 
 Anggota
 ==============
-<table>
-<td align=center>Nama</td>
-<td align=center>NPM</td>
-<tr>
-<td>Andryan Sitata</td>      <td>117006105</td>
-</tr>
-<tr>
-<td>Ade Fahmi R</td>         <td>117006106</td>
-</tr>
-<tr>
-<td>Ikhsan Setya P</td>      <td>117006119</td>
-</tr>
-<tr>
-<td>Edy Rachman M</td>       <td>117006136</td>
-</tr>
-<tr>
-<td>Hamdika Rizki P</td>     <td>117006147</td>
-</tr>
-</table>
+![andryan](https://avatars2.githubusercontent.com/u/7258913?s=120)
+<br>117006105
+<br>Andryan Sitata
+<br>
+<br>
+![ade](https://avatars1.githubusercontent.com/u/7203360?s=120)
+<br>117006106
+<br>Ade Fahmi R
+<br>
+<br>
+![ikhsan](https://avatars1.githubusercontent.com/u/7259248?s=120)
+<br>117006119
+<br>Ikhsan Setya P
+<br>
+<br>
+![edy](https://avatars2.githubusercontent.com/u/7258850?s=120)
+<br>117006136
+<br>Edy Rachman M
+<br>
+<br>
+![hamdika](https://avatars3.githubusercontent.com/u/7258764?s=120)
+<br>117006147
+<br>Hamdika Rizki P
 
 
 
-![](https://avatars1.githubusercontent.com/u/7259248?s=80) 
+
+
