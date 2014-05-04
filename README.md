@@ -5,8 +5,9 @@ Tugas Besar Layanan Web
 
 Anggota
 ==============
-     Nama          NPM
-==============
+<table>
+<td>Nama</td>          
+<td>NPM</td>
 Andryan Sitata      117006105<br>
 Ade Fahmi R         117006106<br>
 Ikhsan Setya P      117006119<br>
