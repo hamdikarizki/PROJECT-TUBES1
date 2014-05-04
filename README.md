@@ -25,7 +25,7 @@ Anggota
 <br>Edy Rachman M
 <br>
 <br>
-![hamdika](http://i1338.photobucket.com/albums/o682/Hamdika_Rizki_Pradhana/c_zps8c9cac2c.jpg)
+![hamdika](https://avatars3.githubusercontent.com/u/7258764?s=120)
 <br>117006147
 <br>Hamdika Rizki P
 
