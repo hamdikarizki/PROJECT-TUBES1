@@ -1,9 +1,0 @@
-+<?php
- +$dom = new DomDocument;
- +$dom->loadHTMLFile("http://www.kabar-priangan.com/news/cat/10008/#");
- +$xpath = /html/body/div[2]/div[4]/div/div[7]/div[2]/img/@src;
- +$judul = $xpath->query("/html/body/div[2]/div[4]/div/h1");
- +foreach ($judul as $jdl) {
- +    echo $jdl->nodeValue;
- +}
- +?>
