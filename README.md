@@ -25,3 +25,7 @@ Anggota
 <td>Hamdika Rizki P</td>     <td>117006147</td>
 </tr>
 </table>
+
+
+
+![](https://avatars1.githubusercontent.com/u/7259248?s=80) 
