@@ -7,8 +7,8 @@ Anggota
 ==============
      Nama          NPM
 ==============
-Andryan Sitata  117006105<br>
-Ade Fahmi R     117006106<br>
-Ikhsan Setya P  117006119<br>
-Edy Rachman M   117006136<br>
-Hamdika Rizki P 117006147
+Andryan Sitata      117006105<br>
+Ade Fahmi R         117006106<br>
+Ikhsan Setya P      117006119<br>
+Edy Rachman M       117006136<br>
+Hamdika Rizki P     117006147
