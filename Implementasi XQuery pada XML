@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+//script ini adalah file XML yang akan digunakan untuk implementasi XQuery
+<catalog>
+   <book id="bk101">
+      <author>Remy Sylado</author>
+      <title>Malaikat Lereng Tidar</title>
+      <price>Rp.83,300</price>
+      <publish_date>Februari 2014</publish_date>
+      <publisher>PBK</publisher>
+   </book>
+   <book id="bk102">
+      <author>Widuri Al Fath Aliudin</author>
+      <title>Yang Penting Punya Nyali</title>
+      <price>Rp.32,130</price>
+      <publish_date>April 2014</publish_date>
+      <publisher>Elex Media</publisher>
+   </book>
+   <book id="bk103">
+     <author>Jusak</author>
+      <title>Teknologi Komunikasi Data Modern</title>
+      <price>Rp.55,250</price>
+      <publish_date>Januari 2013</publish_date>
+      <publisher>Andi Offset</publisher>
+   </book>
+   <book id="bk104">
+      <author>Jubilee Enterprise</author>
+      <title>Toko Online Modern</title>
+      <price>Rp.32,130</price>
+      <publish_date>Fevruari 2013</publish_date>
+      <publisher>Elex Media</publisher>
+   </book>
+   <book id="bk105">
+      <author>Agus Saputra</author>
+      <title>Sistem Informasi Nilai Akademik Untuk Panduan Skripsi</title>
+      <price>Rp.38,080</price>
+      <publish_date>Mei2012</publish_date>
+      <publisher>Elex Media</publisher>
+   </book>
+   <book id="bk106">
+      <author>Su Rahman</author>
+      <title>SEO Khusus Website Berbasis Joomla</title>
+      <price>Rp.29,580</price>
+      <publish_date>Juni 2013</publish_date>
+      <publisher>Elex Media</publisher>
+   </book>
+   <book id="bk107">
+      <author>M Sadeli</author>
+      <title>Pemrograman Database Visual Basic 2010</title>
+      <price>Rp.41,225</price>
+      <publish_date>Oktober 2013</publish_date>
+      <publisher>Maxikom</publisher>
+   </book>
+   <book id="bk108">
+      <author>Eko Priyo Utomo</author>
+      <title>Mobile Web Programming Html5.Css3.Jquery Mobile</title>
+      <price>Rp.39,525</price>
+      <publish_date>Agustus 2013</publish_date>
+      <publisher>Andi Publisher</publisher>
+   </book>
+   <book id="bk109">
+      <author>Rh Sianipar</author>
+      <title>Java Algoritma Struktur Data&Pemrograman Gui</title>
+      <price>Rp.80,750</price>
+      <publish_date>Mei 2013</publish_date>
+      <publisher>Informatika</publisher>
+   </book>
+   <book id="bk110">
+      <author>Beranda Agency</author>
+      <title>Dropshipping Cara Mudah Bisnis Online</title>
+      <price>Rp.21,080</price>
+      <publish_date>Februari 2013</publish_date>
+      <publisher>Elex Media</publisher>
+   </book>
+</catalog>
+
+
+========================================================================
+//Berikut script untuk Xquery dengan cara pertama
+
+xquery version "1.0";
+<html>
+       <head>
+  <title>Daftar Buku Gramedia - XQuery 1</title>
+ </head>
+ <body>
+  <h1>Book Titles (A-Z)</h1>
+   <div>
+    <ul>
+    {
+     for $b in doc()//catalog/book
+     order by $b/title ascending
+     return
+      <li>{$b/title/text()}</li>
+    }
+    </ul>
+   </div>
+ </body>
+</html>
+
+===========================================================================
+//Berikut script untuk Xquery dengan cara kedua
+
+xquery version "1.0";
+<html>
+ <head>
+  <title>Daftar Buku Gramedia - XQuery 2</title>
+ </head>
+ <body>
+  <h1>Books by Author</h1>
+  <div>
+  {
+   for $author in fn:distinct-values(doc()//catalog/book/author)
+   return
+    <div>
+     <h3>{$author}</h3>
+     <ul>
+      {
+       for $b in doc()//catalog/book
+       where $b/author = $author
+       return
+        <li>{$b/title/text()}</li>
+      }
+     </ul>
+    </div>
+     }
+  </div>
+ </body>
+</html>
+
+==============================================================================
+//Berikut script untuk Xquery dengan cara ketiga
+
+xquery version "1.0";
+<html>
+ <head>
+  <title>Daftar Buku Gramedia - XQuery 3</title>
+ </head>
+ <body>
+   <h1>Most and Least Expensive Books</h1>
+   { 
+     let $books := doc()//catalog/book      
+     let $max := $books[price = max($books/price)]
+     let $min := $books[price = min($books/price)]
+     return
+     <div>
+      <div>Most Expensive: {$max[1]/title/text()} - ${$max[1]/price/text()}</div>
+      <div>Least Expensive: {$min[1]/title/text()} - ${$min[1]/price/text()}</div>
+    </div>
+   }
+ </body>
+</html>
